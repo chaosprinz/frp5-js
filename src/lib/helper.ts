@@ -9,3 +9,6 @@ export const hasCap = has("cap")
 export const hasJoin = has("join")
 export const justNull = always(null)
 export const mapIndexed = addIndex(map)
+
+export const randomInRange = (min: number, max: number) =>
+  Math.round(Math.random() * (max - min))

@@ -12,3 +12,8 @@ export const p = curry(
 
 export const circle = p("circle")
 export const rect = p("rect")
+export const line = p("line")
+export const point = p("point")
+export const quad = p("quad")
+export const square = p("square")
+export const triangle = p("triangle")

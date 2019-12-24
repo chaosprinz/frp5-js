@@ -9,8 +9,6 @@ import { setStrokeEventually, drawShape } from "./lib/render"
 
 const root = document.getElementById("app")
 
-let red = colorize([255, 0, 0])
-
 let randomInRange = (min: number, max: number) => {
   return Math.round(Math.random() * (max - min))
 }

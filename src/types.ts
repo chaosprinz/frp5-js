@@ -19,3 +19,8 @@ export type GraphicObject = {
   shape: Shape
   stroke: Stroke
 }
+
+export type PVector = {
+  x: number
+  y: number
+}

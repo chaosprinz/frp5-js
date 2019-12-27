@@ -5,6 +5,8 @@ export type Color = {
 
 export type Shape = {
   name: string
+  x: number
+  y: number
   args: any[]
 }
 

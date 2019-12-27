@@ -1,4 +1,4 @@
-import { circle, rect, square } from "../lib/virtual-p5"
+import { circle, rect, square, p } from "../lib/virtual-p5"
 import { drawShape, setStrokeEventually } from "../lib/render"
 import { stroke } from "../lib/stroke"
 import { colorize } from "../lib/color"
@@ -7,7 +7,7 @@ import { pVector, negate, add } from "../lib/pvector"
 export default function(p5) {
   let pos = pVector(100, 100),
       speed = pVector(9, 4.5),
-      ball = circle(pos, 100),
+      ball = p('circle', pos, 100),
       draw = drawShape(p5)
   console.log(ball.pos)
   p5.setup = () => {

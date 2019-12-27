@@ -4,13 +4,14 @@ import { rect, circle } from "../lib/virtual-p5"
 import { stroke } from "../lib/stroke"
 import { colorize } from "../lib/color"
 import { setStrokeEventually, drawShape } from "../lib/render"
+import { pVector } from "../lib/pvector"
 
 const createBall = curry((offsetX, offsetY, size, i) =>
-  rect(offsetX * i, offsetY, size, size)
+  rect(pVector(offsetX * i, offsetY), size, size)
 )
 
 const createBall2 = curry((offsetX, offsetY, size, i) =>
-  circle(offsetX, offsetY * i, size, size)
+  circle(pVector(offsetX, offsetY * i), size, size)
 )
 
 const createBalls = (count, offsetX, size, offsetY, offsetFunction) => {

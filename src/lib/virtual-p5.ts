@@ -1,11 +1,12 @@
 import { curry } from "ramda"
-import { Shape } from "../types"
+import { Shape, PVector } from "../types"
 
 export const p = curry(
-  (name: string, x, y, ...rest: any[]): Shape => {
+  (name: string, pos: PVector, ...rest: any[]): Shape => {
     return {
       name,
-      args: [x, y, ...rest]
+      pos,
+      args: [...rest]
     }
   }
 )

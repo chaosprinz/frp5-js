@@ -37,5 +37,5 @@ const _setStrokeEventually = (p5: any, stroke: Stroke) => {
 export const setStrokeEventually = curry(_setStrokeEventually)
 
 export const drawShape = curry((p5: any, obj) => {
-  p5[obj.name].apply(p5, obj.args)
+  p5[obj.name].apply(p5, [obj.pos.x, obj.pos.y, ...obj.args])
 })

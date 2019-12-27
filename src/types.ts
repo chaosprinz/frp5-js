@@ -5,8 +5,7 @@ export type Color = {
 
 export type Shape = {
   name: string
-  x: number
-  y: number
+  pos: PVector
   args: any[]
 }
 

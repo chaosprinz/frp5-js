@@ -1,6 +1,6 @@
 import "./styles.css"
 import P5 from "p5"
-import sketchMe from "./examples/bouncingBall"
+import sketchMe from "./examples/bouncingBallVector"
 
 const root = document.getElementById("app")
 

@@ -1,15 +1,16 @@
 import { curry } from "ramda"
 import { Shape, PVector } from "../types"
 
-export const p = curry(
-  (name: string, pos: PVector, ...rest: any[]): Shape => {
-    return {
-      name,
-      pos,
-      args: [...rest]
-    }
+
+const _p = (name: string, pos: PVector, ...rest: any[]): Shape => {
+  return {
+    name,
+    pos,
+    args: [...rest]
   }
-)
+}
+
+export const p = curry(_p)
 
 export const circle = p("circle")
 export const rect = p("rect")

@@ -1,5 +1,5 @@
 import { curry } from "ramda"
-import { Shape, PVector } from "../types"
+import { Shape, PVector } from "../../types"
 
 
 const _p = (name: string, pos: PVector, ...rest: any[]): Shape => {

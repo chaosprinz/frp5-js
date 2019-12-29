@@ -1,4 +1,4 @@
-import { pVector, magnitude, divide, normalize } from '../../lib/pvector'
+import { pVector, magnitude, normalize } from '../../lib/pvector'
 
 describe('normalize - caclulate a vector of length 1 pointing to the direction of a given vector', () => {
   const arg = pVector(3, 4)
